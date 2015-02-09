@@ -8,7 +8,10 @@ describe('queenAttack', function() {
   it('is true if the y coordinates are matching', function() {
     expect(queenAttack([2, 8], [4, 8])).to.equal(true);
   });
-  it('is true if the queen can attack diagonally'), function() {
+  it('is true if the queen can attack diagonally', function() {
     expect(queenAttack([2,2], [4,4])).to.equal(true);
+  });
+  it('is true if the queen can attack in every direction diagonally', function(){
+    expect(queenAttack([1,5], [5,1])).to.equal(true);
   });
 });
